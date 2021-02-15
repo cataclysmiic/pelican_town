@@ -1,0 +1,12 @@
+html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    background-color: #999;
+    /* background-image: url("img/sdv_day.png"); */
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
