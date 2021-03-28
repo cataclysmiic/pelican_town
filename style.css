@@ -1,12 +1,41 @@
-html {
+5html {
     height: 100%;
 }
 body {
-    margin: 0;
+    margin: 100px;
     background-color: #999;
-    /* background-image: url("img/sdv_day.png"); */
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
     height: 100%;
+}
+
+@keyframes envelope {
+    0% {transform: rotate(5deg);}
+    10% {transform: rotate(-5deg);}
+    20% {transform: rotate(5deg);}
+    30% {transform: rotate(0deg);}
+    70% {transform: rotate(0deg);}
+    80% {transform: rotate(5deg);}
+    90% {transform: rotate(-5deg);}
+    100% {transform: rotate(5deg);}
+}
+
+.envelope {
+    animation: envelope;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    width: 100px;
+}
+
+@keyframes envelope_hover {
+    from {transform: scale(1,1)}
+    to {transform: scale(1.2,1.2)}
+}
+
+.envelope:hover {
+    animation: envelope_hover;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
