@@ -5,7 +5,7 @@ let hour = new Date().getHours();
 // CHANGE TO SIMULATE DIFFERENT TIMES OF DAY
 // 0-3 night
 // 4-6 dawn
-// 7-10 morning
+// 7-10 morNning
 // 11-17 day
 // 18-19 sunset
 // 20-23 night
@@ -33,3 +33,21 @@ if (0 <= hour && hour <= 3) {
 // INSERTS BODY BG STYLE
 const stylesheetLink = document.querySelector('link');
 stylesheetLink.parentNode.insertBefore(style, stylesheetLink.nextSibling);
+
+
+
+// EXPANDING MENU
+function menuOpenClose() {
+    const topNav = document.getElementById("top-nav");
+    const arrow = document.getElementById("arrow");
+    const siteName = document.getElementById("site-name");
+    if (topNav.style.display === "none") {
+        topNav.style.display = "block";
+        // siteName.style.padding = "2.8em 0 0 0";
+        arrow.src = "img/nav_arrow_up.svg";
+    } else {
+        topNav.style.display = "none";
+        arrow.src = "img/nav_arrow_down.svg";
+        // siteName.style.padding = "0.8em 0 0 0";
+    }
+  }
