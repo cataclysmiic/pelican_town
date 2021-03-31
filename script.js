@@ -10,7 +10,7 @@ let hour = new Date().getHours();
 // 18-19 sunset
 // 20-23 night
 
-// hour = 20;
+hour = 11;
 
 
 // DETERMINES BG IMAGE
@@ -40,14 +40,11 @@ stylesheetLink.parentNode.insertBefore(style, stylesheetLink.nextSibling);
 function menuOpenClose() {
     const topNav = document.getElementById("top-nav");
     const arrow = document.getElementById("arrow");
-    const siteName = document.getElementById("site-name");
     if (topNav.style.display === "none") {
         topNav.style.display = "block";
-        // siteName.style.padding = "2.8em 0 0 0";
         arrow.src = "img/nav_arrow_up.svg";
     } else {
         topNav.style.display = "none";
         arrow.src = "img/nav_arrow_down.svg";
-        // siteName.style.padding = "0.8em 0 0 0";
     }
   }
