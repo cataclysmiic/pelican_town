@@ -20,25 +20,23 @@ body {
 }
 
 nav {
+    z-index: 99;
     position: fixed;
     top: 0;
     min-width: 100%;
 }
 
 .menu-button {
-    z-index: 99;
     background: #0559ac;
     padding: 10px;
     text-align: center;
 }
 
 #arrow {
-    z-index: 99;
     height: 1.5em;
 }
 
 .menu {
-    z-index: 99;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -89,12 +87,16 @@ header {
 
 main {
     padding-bottom: 6em;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
 }
 
 article {
+    width:80%;
     padding:20px;
     background: #3185d8;
-    margin: 20px;
+    margin-bottom: 30px;
     text-align: justify;
     border-radius: 15px;
     box-shadow: 1px 1px #247dd4,
@@ -104,8 +106,28 @@ article {
                 5px 5px #1370ca;
 }
 
-article img {
+.article-img {
+    position: relative;
+}
+
+.article-img img {
     width: 100%;
+}
+
+.caption {
+    position: absolute;
+    bottom: 5%;
+    left: 2%;
+    font-family: "Suez One", serif;
+    font-size: 2rem;
+    color: #cbebfa;
+    text-shadow: 1px 1px #247dd4,
+                 2px 2px #1370ca,
+                 3px 3px #1370ca;
+}
+
+.desc {
+    display: none;
 }
 
 .morelink {
@@ -142,7 +164,7 @@ a:active, a:hover {
 
 .envelope {
     z-index: 0;
-    position: relative;
+    position: static;
     animation: envelope;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -157,6 +179,7 @@ a:active, a:hover {
 
 .envelope:hover {
     z-index: 0;
+    position: static;
     animation: envelope_hover;
     animation-duration: 2s;
     animation-iteration-count: 1;
@@ -193,4 +216,48 @@ footer {
     background: #196379;
     padding: 20px 0px;
     text-align: center;
+}
+
+@media (min-width: 580px) {
+    main {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    article {
+        width: 35%;
+        margin: 3%;
+    }
+    .welcome {
+        flex-basis: 80%;
+    }
+}
+
+@media (min-width: 1400px) {
+    main {
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+    article {
+        /* width: 300px; */
+        margin: 20px;
+    }
+    .desc {
+        display: inline-block;
+    }
+    .welcome {
+        /* flex-basis: auto; */
+        order: 3;
+    }
+    .festivals {
+        order: 1;
+    }
+    .attractions {
+        order: 2;
+    }
+    .calendar {
+        order: 4;
+    }
+    .nearby {
+        order: 5;
+    }
 }
