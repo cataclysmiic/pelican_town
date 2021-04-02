@@ -23,9 +23,20 @@ A travel website for Pelican Town in Stardew Valley.
 - [x] Expanding menu
 - [x] Flexbox layout changes
 - [x] CSS animation
+<p align="center">
+<img src="https://cataclysmiic.github.io/pelican_town/img/preview_animation.gif" height="100">
+</p>
+
 ### JavaScript
 - [x] Show/hide content (letter, menu)
 - [x] Background change based on time of day
+<p align="center">
+<img src="https://cataclysmiic.github.io/pelican_town/img/sdv_dawn.png" height="100">
+<img src="https://cataclysmiic.github.io/pelican_town/img/sdv_morning.png" height="100">
+<img src="https://cataclysmiic.github.io/pelican_town/img/sdv_day.png" height="100">
+<img src="https://cataclysmiic.github.io/pelican_town/img/sdv_sunset.png" height="100">
+<img src="https://cataclysmiic.github.io/pelican_town/img/sdv_night.png" height="100">
+</p>
 
 ## How To
 ### Simulate different time of day
