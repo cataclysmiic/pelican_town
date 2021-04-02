@@ -7,7 +7,6 @@
     <link type="text/css" rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
     <title>Pelican Town</title>
 </head>
 <body>
@@ -31,15 +30,16 @@
         <article class="welcome">
             <h1>Welcome</h1>
             You've arrived in Pelican Town, nestled in the heart of beautiful Stardew Valley. Please see a letter from Mayor Lewis below...
-            
-            <center><img class="envelope" src="img/letter_sealed.png" alt="A Letter From the Mayor"></center>
 
-            <!-- <div class="letter-bg">
-                <div class="letter">
+            <center><img id="letter" class="envelope" src="img/letter_sealed.png" alt="A Letter From the Mayor"></center>
+            
+            <div id="modal" class="modal-bg">
+                <div class="modal-letter">
+                    <img id="close" src="img/close.svg">
                     Hmm... tax collection... *mumble* ...spring festivities expenses... *mumble*... Yes?
-                    <div style="text-align: right;">-Mayor Lewis</div>
-                <div>
-            </div> -->
+                    <div style="text-align: right; margin-top: 20px;">- Mayor Lewis</div>
+                </div>
+            </div>            
         </article>
 
         <article class="festivals">
@@ -84,9 +84,9 @@
 </main>
     
     <footer>
-        It's a footer.
-        <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+        Stardew Valley Copyright © 2016-2020 ConcernedApe LLC &bull; Icons by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>.
     </footer>
 
 </body>
+<script src="script.js"></script>
 </html>

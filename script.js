@@ -48,3 +48,20 @@ function menuOpenClose() {
         arrow.src = "img/nav_arrow_down.svg";
     }
   }
+
+
+// LETTER FROM THE MAYOR MODAL
+const modal = document.getElementById("modal");
+const letter = document.getElementById("letter");
+const close = document.getElementById("close");
+
+
+letter.onclick = () => modal.style.display = "block";
+
+close.onclick = () => modal.style.display = "none";
+
+window.onclick = (event) => {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
