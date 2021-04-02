@@ -14,9 +14,9 @@ A travel website for Pelican Town in Stardew Valley.
 - [x] Layout change at 1400px wide
 - [x] Extra content visible at 1400px+
 <p align="center">
-<img src="https://cataclysmiic.github.io/pelican_town/img/preview.png" height="300">
-<img src="https://cataclysmiic.github.io/pelican_town/img/preview_580.png" height="300">
-<img src="https://cataclysmiic.github.io/pelican_town/img/preview_1400.png" height="300">
+<img src="https://cataclysmiic.github.io/pelican_town/img/preview.png" height="200">
+<img src="https://cataclysmiic.github.io/pelican_town/img/preview_580.png" height="200">
+<img src="https://cataclysmiic.github.io/pelican_town/img/preview_1400.png" height="200">
 </p>
 
 ### CSS
