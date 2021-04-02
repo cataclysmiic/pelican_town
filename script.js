@@ -10,7 +10,7 @@ let hour = new Date().getHours();
 // 18-19 sunset
 // 20-23 night
 
-// hour = 11;
+ hour = 11;
 
 
 // DETERMINES BG IMAGE
