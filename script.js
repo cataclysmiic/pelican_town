@@ -5,12 +5,12 @@ let hour = new Date().getHours();
 // CHANGE TO SIMULATE DIFFERENT TIMES OF DAY
 // 0-3 night
 // 4-6 dawn
-// 7-10 morNning
+// 7-10 morning
 // 11-17 day
 // 18-19 sunset
 // 20-23 night
 
- hour = 11;
+// hour = 11;
 
 
 // DETERMINES BG IMAGE
