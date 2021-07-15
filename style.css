@@ -38,6 +38,7 @@ nav {
 }
 
 .menu {
+    display: none;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -293,5 +294,20 @@ footer {
     }
     .caption {
         font-size: 1.2rem;
+    }
+    .menu {
+        display: block;
+    }
+    .menu a:link, .menu a:visited {
+        display:inline;
+        padding: 10px 40px;
+    }
+    .menu li {
+        display:inline-block;
+        margin: 10px 10px 10px 10px;
+    }
+
+    .menu-button {
+        display: none;
     }
 }
